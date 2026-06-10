@@ -27,7 +27,7 @@ The intended contribution here is narrower: a minimal, readable prototype for ex
 
 ## What is in the repo?
 
-```
+```text
 telemetry-aware-agent-monitoring-prototype/
 ├── README.md
 ├── requirements.txt
@@ -48,7 +48,7 @@ telemetry-aware-agent-monitoring-prototype/
 ├── reports/
 │   └── demo_results.md
 └── run_demo.py
-'''
+```
 
 ## Quick start
 
