@@ -1,18 +1,20 @@
 # Telemetry-Aware Agent Monitoring Prototype
 
-Prototype for evaluating simple monitors over synthetic AI agent traces.
+A one-day Python prototype for evaluating simple monitors over synthetic AI agent traces.
 
-This is **not a complete benchmark** and should not be described as one. It is a simplified demonstration of:
+This repository is **not a complete benchmark** and should not be described as one. It is a small, honest demonstration of:
 
-- a trace schema for AI agent telemetry
-- monitor interfaces that consume traces
-- three baseline monitors
-- false-positive-aware evaluation metrics
-- early-detection metrics for suspicious behavior
+- a trace schema for AI agent telemetry,
+- monitor interfaces that consume traces,
+- three baseline monitors,
+- false-positive-aware evaluation metrics, and
+- early-detection metrics for suspicious behavior.
 
 ## Research motivation
 
-The core research question is: Which behavioral traces help monitors detect suspicious AI agent behavior early while keeping false positives low enough for human review?
+The core research question is:
+
+> Which behavioral traces help monitors detect suspicious AI agent behavior early while keeping false positives low enough for human review?
 
 This prototype focuses on telemetry representations rather than model capability. The synthetic traces are intentionally small and safe. They use toy examples such as reading `secrets_demo.txt`, modifying `auth_demo.py` in an unrelated way, disabling a toy test, or touching hidden demo configuration. The traces do **not** contain real credentials, exploit instructions, harmful code, or operational attack details.
 
@@ -52,7 +54,7 @@ telemetry-aware-agent-monitoring-prototype/
 
 ## Quick start
 
-```
+```bash
 git clone <your-repo-url>
 cd telemetry-aware-agent-monitoring-prototype
 python -m venv .venv
@@ -97,7 +99,7 @@ Because this repo contains only 10 synthetic traces, the numbers are not statist
 
 ## Design choices
 
-This prototype intentionally avoids:
+This prototype intentionally avoids overengineering:
 
 - JSON traces are simple and readable.
 - Monitors return step-level alerts.
