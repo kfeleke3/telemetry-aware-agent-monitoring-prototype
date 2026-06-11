@@ -1,6 +1,6 @@
 # Telemetry-Aware Agent Monitoring Prototype
 
-A one-day Python prototype for evaluating simple monitors over synthetic AI agent traces.
+A  prototype for evaluating simple monitors over synthetic AI agent traces.
 
 This repository is **not a complete benchmark** and should not be described as one. It is a small, honest demonstration of:
 
